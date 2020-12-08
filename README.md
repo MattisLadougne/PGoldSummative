@@ -1,2 +1,2 @@
 # PGoldSummative
-Mattis Ladougne's PGold SUmmative
+Mattis Ladougne's PGold Summative
