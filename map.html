@@ -10,8 +10,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    <!-- Map of the cases-->
     <img src="img/eumap.png">
-    <p> Image from the European Centre for Disease Prevention and Control, an agency of the European Union.</p> 
+    <p> Image from the European Centre for Disease Prevention and Control, an agency of the European Union. As of the 10th January 2021</p> 
+
+    <!-- Button using JS function isRisk to see whether the person is at risk when their age is entered -->
+    <h2> Check whether you are at risk or not by clicking this button</h2>
+   
+
+
+    <button onclick="isRisk()"> Are you at risk? </button>
+
+    <p id="demo"></p>
+    
+    <script>
+    function isRisk() {
+      var txt;
+      var age = prompt("Please enter your age:");
+
+      if (age < 60){
+        txt =  age + ": You are most likely not at risk. However, be aware that you can still spread the virus to more vulnerable people. ";
+      }
+      if (age > 61){
+        txt = age + ": You are most likely at risk if you catch the virus. Be careful, and try and maintain guidelines as much as possible.";
+      }
+        
+      document.getElementById("demo").innerHTML = txt;
+    
+    }
+    </script>
+    
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

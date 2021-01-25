@@ -1,2 +1,2 @@
 # PGoldSummative
-VERY HARD
+Mattis Ladougne's PGold Summative.
